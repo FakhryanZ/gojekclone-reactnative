@@ -1,3 +1,4 @@
+/* eslint-disable react-native/no-inline-styles */
 /**
  * Sample React Native App
  * https://github.com/facebook/react-native
@@ -30,6 +31,15 @@ import pay from './icon/pay.png';
 import nearbay from './icon/nearby.png';
 import topup from './icon/topup.png';
 import more from './icon/more.png';
+
+import goride from './icon/go-ride.png';
+import gocar from './icon/go-car.png';
+import gobluebird from './icon/go-bluebird.png';
+import gosend from './icon/go-send.png';
+import godeals from './icon/go-deals.png';
+import gopulsa from './icon/go-pulsa.png';
+import gofood from './icon/go-food.png';
+import gomore from './icon/go-more.png';
 
 const App = () => {
   return (
@@ -159,7 +169,222 @@ const App = () => {
               </View>
             </View>
           </View>
+          {/* main feature */}
+          <View
+            style={{
+              flexDirection: 'row',
+              flexWrap: 'wrap',
+              marginTop: 18,
+            }}>
+            <View
+              style={{
+                justifyContent: 'space-between',
+                flexDirection: 'row',
+                width: '100%',
+                marginBottom: 18,
+              }}>
+              <View style={{width: '25%', alignItems: 'center'}}>
+                <View
+                  style={{
+                    width: 58,
+                    height: 58,
+                    borderWidth: 1,
+                    borderColor: '#EFEFEF',
+                    borderRadius: 18,
+                    justifyContent: 'center',
+                    alignItems: 'center',
+                  }}>
+                  <Image source={goride} />
+                </View>
+                <Text
+                  style={{
+                    fontSize: 11,
+                    fontWeight: 'bold',
+                    textAlign: 'center',
+                    marginTop: 6,
+                  }}>
+                  GO-RIDE
+                </Text>
+              </View>
+              <View style={{width: '25%', alignItems: 'center'}}>
+                <View
+                  style={{
+                    width: 58,
+                    height: 58,
+                    borderWidth: 1,
+                    borderColor: '#EFEFEF',
+                    borderRadius: 18,
+                    justifyContent: 'center',
+                    alignItems: 'center',
+                  }}>
+                  <Image source={gocar} />
+                </View>
+                <Text
+                  style={{
+                    fontSize: 11,
+                    fontWeight: 'bold',
+                    textAlign: 'center',
+                    marginTop: 6,
+                  }}>
+                  GO-CAR
+                </Text>
+              </View>
+              <View style={{width: '25%', alignItems: 'center'}}>
+                <View
+                  style={{
+                    width: 58,
+                    height: 58,
+                    borderWidth: 1,
+                    borderColor: '#EFEFEF',
+                    borderRadius: 18,
+                    justifyContent: 'center',
+                    alignItems: 'center',
+                  }}>
+                  <Image source={gobluebird} />
+                </View>
+                <Text
+                  style={{
+                    fontSize: 11,
+                    fontWeight: 'bold',
+                    textAlign: 'center',
+                    marginTop: 6,
+                  }}>
+                  GO-BLUEBIRD
+                </Text>
+              </View>
+              <View style={{width: '25%', alignItems: 'center'}}>
+                <View
+                  style={{
+                    width: 58,
+                    height: 58,
+                    borderWidth: 1,
+                    borderColor: '#EFEFEF',
+                    borderRadius: 18,
+                    justifyContent: 'center',
+                    alignItems: 'center',
+                  }}>
+                  <Image source={gosend} />
+                </View>
+                <Text
+                  style={{
+                    fontSize: 11,
+                    fontWeight: 'bold',
+                    textAlign: 'center',
+                    marginTop: 6,
+                  }}>
+                  GO-SEND
+                </Text>
+              </View>
+            </View>
+            <View
+              style={{
+                justifyContent: 'space-between',
+                flexDirection: 'row',
+                width: '100%',
+              }}>
+              <View style={{width: '25%', alignItems: 'center'}}>
+                <View
+                  style={{
+                    width: 58,
+                    height: 58,
+                    borderWidth: 1,
+                    borderColor: '#EFEFEF',
+                    borderRadius: 18,
+                    justifyContent: 'center',
+                    alignItems: 'center',
+                  }}>
+                  <Image source={godeals} />
+                </View>
+                <Text
+                  style={{
+                    fontSize: 11,
+                    fontWeight: 'bold',
+                    textAlign: 'center',
+                    marginTop: 6,
+                    justifyContent: 'center',
+                    alignItems: 'center',
+                  }}>
+                  GO-DEALS
+                </Text>
+              </View>
+              <View style={{width: '25%', alignItems: 'center'}}>
+                <View
+                  style={{
+                    width: 58,
+                    height: 58,
+                    borderWidth: 1,
+                    borderColor: '#EFEFEF',
+                    borderRadius: 18,
+                    justifyContent: 'center',
+                    alignItems: 'center',
+                  }}>
+                  <Image source={gopulsa} />
+                </View>
+                <Text
+                  style={{
+                    fontSize: 11,
+                    fontWeight: 'bold',
+                    textAlign: 'center',
+                    marginTop: 6,
+                    justifyContent: 'center',
+                    alignItems: 'center',
+                  }}>
+                  GO-PULSA
+                </Text>
+              </View>
+              <View style={{width: '25%', alignItems: 'center'}}>
+                <View
+                  style={{
+                    width: 58,
+                    height: 58,
+                    borderWidth: 1,
+                    borderColor: '#EFEFEF',
+                    borderRadius: 18,
+                    justifyContent: 'center',
+                    alignItems: 'center',
+                  }}>
+                  <Image source={gofood} />
+                </View>
+                <Text
+                  style={{
+                    fontSize: 11,
+                    fontWeight: 'bold',
+                    textAlign: 'center',
+                    marginTop: 6,
+                    justifyContent: 'center',
+                    alignItems: 'center',
+                  }}>
+                  GO-FOOD
+                </Text>
+              </View>
+              <View style={{width: '25%', alignItems: 'center'}}>
+                <View
+                  style={{
+                    width: 58,
+                    height: 58,
+                    borderWidth: 1,
+                    borderColor: '#EFEFEF',
+                    borderRadius: 18,
+                    justifyContent: 'center',
+                    alignItems: 'center',
+                  }}>
+                  <Image source={gomore} />
+                </View>
+                <Text
+                  style={{
+                    fontSize: 11,
+                    fontWeight: 'bold',
+                    textAlign: 'center',
+                    marginTop: 6,
+                  }}>
+                  MORE
+                </Text>
+              </View>
+            </View>
+          </View>
         </View>
+
+        {/* bottom navigation */}
         <View
           style={{height: 54, flexDirection: 'row', backgroundColor: 'white'}}>
           <View
@@ -222,7 +447,5 @@ const App = () => {
     </>
   );
 };
-
-const styles = StyleSheet.create({});
 
 export default App;
