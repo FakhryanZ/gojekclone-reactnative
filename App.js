@@ -15,6 +15,8 @@ import {
   Text,
   View,
   TextInput,
+  ScrollView,
+  TouchableOpacity,
 } from 'react-native';
 import iconHome from './icon/home.png';
 import iconHomeActive from './icon/home-active.png';
@@ -41,12 +43,15 @@ import gopulsa from './icon/go-pulsa.png';
 import gofood from './icon/go-food.png';
 import gomore from './icon/go-more.png';
 
+import bannerSepakBola from './dummy/sepak-bola.jpg';
+
+import logoWhite from './logo/white.png';
 const App = () => {
   return (
     <>
       <StatusBar barStyle="dark-content" backgroundColor="white" />
       <View style={{flex: 1, paddingTop: 15}}>
-        <View style={{flex: 1, backgroundColor: 'white'}}>
+        <ScrollView style={{flex: 1, backgroundColor: 'white'}}>
           {/* search bar */}
           <View style={{marginHorizontal: 17, flexDirection: 'row'}}>
             <View style={{position: 'relative', flex: 1}}>
@@ -382,7 +387,95 @@ const App = () => {
               </View>
             </View>
           </View>
-        </View>
+          {/* barrier */}
+          <View
+            style={{height: 17, backgroundColor: '#F2F2F4', marginTop: 20}}
+          />
+          {/* news section */}
+          <View
+            style={{
+              paddingTop: 16,
+              paddingHorizontal: 16,
+              paddingBottom: 20,
+            }}>
+            <View style={{position: 'relative'}}>
+              <Image
+                source={bannerSepakBola}
+                style={{
+                  height: 170,
+                  width: '100%',
+                  borderRadius: 7,
+                }}
+              />
+              <View
+                style={{
+                  width: '100%',
+                  height: '100%',
+                  position: 'absolute',
+                  backgroundColor: 'black',
+                  opacity: 0.26,
+                  borderRadius: 6,
+                }}
+              />
+              <View
+                style={{
+                  height: 15,
+                  width: 55,
+                  position: 'absolute',
+                  top: 10,
+                  left: 16,
+                }}>
+                <Image
+                  source={logoWhite}
+                  style={{
+                    width: undefined,
+                    height: undefined,
+                    resizeMode: 'contain',
+                    flex: 1,
+                  }}
+                />
+              </View>
+            </View>
+            <View
+              style={{
+                paddingBottom: 16,
+                borderBottomColor: '#E8E9ED',
+                borderBottomWidth: 1,
+                marginBottom: 20,
+              }}>
+              <Text
+                style={{
+                  fontSize: 16,
+                  fontWeight: 'bold',
+                  color: '#1C1C1C',
+                  marginTop: 16,
+                }}>
+                GO-NEWS
+              </Text>
+              <Text style={{fontSize: 14, color: '#7A7A7A', marginBottom: 11}}>
+                Dimas Drajat selamatkan penalti, Timnas U-23 kalahkan Brunei
+              </Text>
+              <TouchableOpacity
+                style={{
+                  backgroundColor: '#61A756',
+                  paddingHorizontal: 12,
+                  paddingVertical: 11,
+                  alignSelf: 'flex-end',
+                  borderRadius: 4,
+                }}>
+                <Text
+                  style={{
+                    fontSize: 13,
+                    fontWeight: 'bold',
+                    color: 'white',
+                    textAlign: 'center',
+                  }}>
+                  READ
+                </Text>
+              </TouchableOpacity>
+            </View>
+          </View>
+        </ScrollView>
 
         {/* bottom navigation */}
         <View
