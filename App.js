@@ -25,12 +25,19 @@ import iconAccount from './icon/account.png';
 import search from './icon/search.png';
 import promo from './icon/promo.png';
 
+import logo from './icon/gopay.png';
+import pay from './icon/pay.png';
+import nearbay from './icon/nearby.png';
+import topup from './icon/topup.png';
+import more from './icon/more.png';
+
 const App = () => {
   return (
     <>
       <StatusBar barStyle="dark-content" backgroundColor="white" />
       <View style={{flex: 1, paddingTop: 15}}>
         <View style={{flex: 1, backgroundColor: 'white'}}>
+          {/* search bar */}
           <View style={{marginHorizontal: 17, flexDirection: 'row'}}>
             <View style={{position: 'relative', flex: 1}}>
               <TextInput
@@ -59,6 +66,97 @@ const App = () => {
                 justifyContent: 'center',
               }}>
               <Image source={promo} />
+            </View>
+          </View>
+          {/* gopay */}
+          <View style={{marginHorizontal: 17, marginTop: 8}}>
+            <View
+              style={{
+                flexDirection: 'row',
+                justifyContent: 'space-between',
+                backgroundColor: '#2C5FB8',
+                borderTopLeftRadius: 4,
+                borderTopRightRadius: 4,
+                padding: 14,
+              }}>
+              <Image source={logo} />
+              <Text style={{fontWeight: 'bold', fontSize: 17, color: 'white'}}>
+                Rp. 50.000
+              </Text>
+            </View>
+            <View
+              style={{
+                flexDirection: 'row',
+                paddingTop: 20,
+                paddingBottom: 14,
+                backgroundColor: '#2F65BD',
+                borderBottomLeftRadius: 4,
+                borderBottomRightRadius: 4,
+              }}>
+              <View
+                style={{
+                  flex: 1,
+                  alignItems: 'center',
+                }}>
+                <Image source={pay} />
+                <Text
+                  style={{
+                    fontSize: 13,
+                    fontWeight: 'bold',
+                    color: 'white',
+                    marginTop: 15,
+                  }}>
+                  Pay
+                </Text>
+              </View>
+              <View
+                style={{
+                  flex: 1,
+                  alignItems: 'center',
+                }}>
+                <Image source={nearbay} />
+                <Text
+                  style={{
+                    fontSize: 13,
+                    fontWeight: 'bold',
+                    color: 'white',
+                    marginTop: 15,
+                  }}>
+                  Nearby
+                </Text>
+              </View>
+              <View
+                style={{
+                  flex: 1,
+                  alignItems: 'center',
+                }}>
+                <Image source={topup} />
+                <Text
+                  style={{
+                    fontSize: 13,
+                    fontWeight: 'bold',
+                    color: 'white',
+                    marginTop: 15,
+                  }}>
+                  Top Up
+                </Text>
+              </View>
+              <View
+                style={{
+                  flex: 1,
+                  alignItems: 'center',
+                }}>
+                <Image source={more} />
+                <Text
+                  style={{
+                    fontSize: 13,
+                    fontWeight: 'bold',
+                    color: 'white',
+                    marginTop: 15,
+                  }}>
+                  More
+                </Text>
+              </View>
             </View>
           </View>
         </View>
