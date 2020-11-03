@@ -7,7 +7,14 @@
  */
 
 import React from 'react';
-import {Image, StyleSheet, StatusBar, Text, View} from 'react-native';
+import {
+  Image,
+  StyleSheet,
+  StatusBar,
+  Text,
+  View,
+  TextInput,
+} from 'react-native';
 import iconHome from './icon/home.png';
 import iconHomeActive from './icon/home-active.png';
 import iconOrder from './icon/order.png';
@@ -15,13 +22,45 @@ import iconHelp from './icon/help.png';
 import iconInbox from './icon/inbox.png';
 import iconAccount from './icon/account.png';
 
+import search from './icon/search.png';
+import promo from './icon/promo.png';
+
 const App = () => {
   return (
     <>
-      <StatusBar barStyle="dark-content" />
-      <View style={{flex: 1}}>
-        <View style={{flex: 1, backgroundColor: 'blue'}}>
-          <Text>Gojek Clone App</Text>
+      <StatusBar barStyle="dark-content" backgroundColor="white" />
+      <View style={{flex: 1, paddingTop: 15}}>
+        <View style={{flex: 1, backgroundColor: 'white'}}>
+          <View style={{marginHorizontal: 17, flexDirection: 'row'}}>
+            <View style={{position: 'relative', flex: 1}}>
+              <TextInput
+                placeholder="What do you want to eat? "
+                style={{
+                  borderWidth: 1,
+                  borderColor: '#E8E8E8',
+                  borderRadius: 25,
+                  height: 40,
+                  fontSize: 13,
+                  paddingLeft: 45,
+                  paddingRight: 20,
+                  backgroundColor: 'white',
+                  marginRight: 18,
+                }}
+              />
+              <Image
+                source={search}
+                style={{position: 'absolute', top: 7, left: 10}}
+              />
+            </View>
+            <View
+              style={{
+                width: 35,
+                alignItems: 'center',
+                justifyContent: 'center',
+              }}>
+              <Image source={promo} />
+            </View>
+          </View>
         </View>
         <View
           style={{height: 54, flexDirection: 'row', backgroundColor: 'white'}}>
