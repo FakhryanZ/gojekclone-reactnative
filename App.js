@@ -44,8 +44,11 @@ import gofood from './icon/go-food.png';
 import gomore from './icon/go-more.png';
 
 import bannerSepakBola from './dummy/sepak-bola.jpg';
+import bannerFood from './dummy/food-banner.jpg';
 
 import logoWhite from './logo/white.png';
+import logoGoFood from './logo/go-food.png';
+
 const App = () => {
   return (
     <>
@@ -438,10 +441,9 @@ const App = () => {
             </View>
             <View
               style={{
-                paddingBottom: 16,
+                paddingBottom: 20,
                 borderBottomColor: '#E8E9ED',
                 borderBottomWidth: 1,
-                marginBottom: 20,
               }}>
               <Text
                 style={{
@@ -474,6 +476,105 @@ const App = () => {
                 </Text>
               </TouchableOpacity>
             </View>
+          </View>
+          {/* gofood banner */}
+          <View style={{paddingHorizontal: 16}}>
+            <View
+              style={{
+                position: 'relative',
+              }}>
+              <Image
+                source={bannerFood}
+                style={{
+                  height: 170,
+                  width: '100%',
+                  borderRadius: 7,
+                }}
+              />
+              <View
+                style={{
+                  width: '100%',
+                  height: '100%',
+                  position: 'absolute',
+                  backgroundColor: 'black',
+                  opacity: 0.15,
+                  borderRadius: 6,
+                }}
+              />
+              <View
+                style={{
+                  height: 15,
+                  width: 55,
+                  position: 'absolute',
+                  top: 10,
+                  left: 16,
+                }}>
+                <Image
+                  source={logoGoFood}
+                  style={{
+                    width: undefined,
+                    height: undefined,
+                    resizeMode: 'contain',
+                    flex: 1,
+                  }}
+                />
+              </View>
+              <View
+                style={{
+                  position: 'absolute',
+                  bottom: 0,
+                  left: 0,
+                  width: '100%',
+                  flexDirection: 'row',
+                  alignItems: 'center',
+                  paddingHorizontal: 16,
+                  paddingBottom: 16,
+                }}>
+                <View>
+                  <Text
+                    style={{
+                      fontSize: 18,
+                      fontWeight: 'bold',
+                      color: 'white',
+                      marginBottom: 8,
+                    }}>
+                    Free GO-FOOD voucher
+                  </Text>
+                  <Text
+                    style={{fontSize: 12, fontWeight: '500', color: 'white'}}>
+                    Quick, before they run out!
+                  </Text>
+                </View>
+                <View style={{flex: 1, paddingLeft: 30}}>
+                  <TouchableOpacity
+                    style={{
+                      backgroundColor: '#61A756',
+                      paddingHorizontal: 12,
+                      paddingVertical: 11,
+                      alignSelf: 'stretch',
+                      borderRadius: 4,
+                    }}>
+                    <Text
+                      style={{
+                        fontSize: 10,
+                        fontWeight: 'bold',
+                        color: 'white',
+                        textAlign: 'center',
+                      }}>
+                      GET VOUCHER
+                    </Text>
+                  </TouchableOpacity>
+                </View>
+              </View>
+            </View>
+            <View
+              style={{
+                borderBottomColor: '#E8E9ED',
+                borderBottomWidth: 1,
+                marginBottom: 20,
+                marginTop: 16,
+              }}
+            />
           </View>
         </ScrollView>
 
